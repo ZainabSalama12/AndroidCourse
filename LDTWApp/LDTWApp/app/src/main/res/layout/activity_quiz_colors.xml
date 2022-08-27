@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="0dp"
+      android:layout_marginBottom="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:padding="10dp">
+    <TextView
+        android:id="@+id/questionsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:text="Questions: 1/n"/>
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:text="score: 0"
+        android:layout_below="@+id/questionsNumber"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:text="00:20"
+        android:layout_toRightOf="@+id/questionsNumber"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question will be here"
+        android:textSize="20dp"
+        android:layout_above="@+id/answers"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <RadioGroup
+        android:id="@+id/answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+      <RadioButton
+          android:id="@+id/option1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="option1"
+          android:textSize="20sp" />
+
+      <RadioButton
+          android:id="@+id/option2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="option2"
+          android:textSize="20sp" />
+
+      <RadioButton
+          android:id="@+id/option3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="option3"
+          android:textSize="20sp" />
+
+      <RadioButton
+          android:id="@+id/option4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="option4"
+          android:textSize="20sp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answers"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Next"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:backgroundTint="@color/black"/>
+
+  </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

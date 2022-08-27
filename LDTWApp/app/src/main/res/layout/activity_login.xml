@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#032139"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".LoginActivity">
+  <ImageView
+      android:id = "@+id/logoImagee"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:src="@drawable/bluelogo" />
+  <TextView
+      android:id="@+id/welcomeBackk"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello there, Welcome back to LDTW!"
+      android:textColor="#0A5688"
+      android:textSize="40sp"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/txtContinuee"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:text="Sign in to continue"
+      android:textColor="	#36454F"
+      android:textSize="18sp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"/>
+  <EditText
+      android:id="@+id/userNamee"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Username"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:boxBackgroundMode="outline"
+      android:textSize="20dp"
+      android:layout_marginTop="10dp"/>
+  <EditText
+      android:id="@+id/passwordd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Password"
+      app:passwordToggleEnabled="true"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:boxBackgroundMode="outline"
+      android:textSize="20dp"
+      android:layout_marginTop="10dp"/>
+  <Button
+      android:id="@+id/signInGoo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="5dp"
+      android:background="#0A5688"
+      android:text="Go"
+      android:textColor="#FFFFFF"
+      android:textSize="25sp" />
+  <Button
+      android:id="@+id/signUpScreenn"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:background="#00F1EAEA"
+      android:elevation="0dp"
+      android:text="New User? Sign up"
+      android:textColor="#36454F"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"/>
+</LinearLayout>

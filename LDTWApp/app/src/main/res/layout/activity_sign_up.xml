@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".SignUp"
+    android:background="#053153">
+
+  <ImageView
+      android:id = "@+id/logoImage"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:src="@drawable/bluelogo" />
+  <TextView
+      android:id="@+id/welcomeBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="WELCOME"
+      android:textColor="#0A5688"
+      android:textSize="40sp"
+      android:textStyle="bold"
+      android:layout_marginTop="-20dp"/>
+  <TextView
+      android:id="@+id/txtContinue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:text="Sign up to start your journey"
+      android:textColor="	#36454F"
+      android:textSize="18sp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"/>
+  <EditText
+      android:id="@+id/userName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Username"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:boxBackgroundMode="outline" />
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Password"
+      app:passwordToggleEnabled="true"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:boxBackgroundMode="outline"
+      android:layout_marginTop="20dp"/>
+  <EditText
+      android:id="@+id/Confirmpassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Confirm Password"
+      app:passwordToggleEnabled="true"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:boxBackgroundMode="outline"
+      android:layout_marginTop="20dp"/>
+  <Button
+      android:id="@+id/signUpGo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="5dp"
+      android:background="#0B185E"
+      android:text="Go"
+      android:textColor="#FFFFFF"
+      android:textSize="20sp"
+      android:layout_marginTop="20dp"/>
+  <Button
+      android:id="@+id/signInScreen"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="#00F1EAEA"
+      android:elevation="0dp"
+      android:layout_marginTop="10dp"
+      android:text="Already have an account? Sign in"
+      android:textColor="#36454F"
+      android:textStyle="bold" />
+</LinearLayout>
